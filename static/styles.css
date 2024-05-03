@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: aliceblue;
+}
+
+.logoSpan {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.logoSpan > img {
+    height: 100%;
+}
+
+#generateButton {
+    background: #fbac30;
+    border: none;
+}
+
+
+
+

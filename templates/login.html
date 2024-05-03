@@ -1,4 +1,8 @@
 {% extends "base.html" %} {% block title %} Log In {% endblock %} {% block main %}
+
+<div class="alert text-danger {{ visibility }}" role="alert">{{ message }}</div>
+
+<h1 class="logoText mb-5">LOGIN</h1>
 <form action="/login" method="post">
   <div class="mb-3">
     <input

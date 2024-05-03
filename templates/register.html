@@ -1,4 +1,7 @@
 {% extends "base.html" %} {% block title %} Register {% endblock %} {% block main %}
+
+<div class="alert text-danger {{ visibility }}" role="alert">{{ message }}</div>
+<h1 lass="logoText mb-5">REGISTER</h1>
 <form action="/register" method="post">
   <div class="mb-3">
     <input
