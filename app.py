@@ -3,10 +3,6 @@ from flask_session import Session
 from werkzeug.security import check_password_hash, generate_password_hash
 from functools import wraps
 
-
-# Other existing import statements
-
-
 from helpers import login_required
 
 import sqlite3
@@ -86,14 +82,13 @@ def register():
             message = "Password should contain at least one letter."
             return render_template("register.html", message=message, visibility="visible")
 
-
         hash = generate_password_hash(password)
 
         try:
             # successful
             db = get_db()
             # now you can use get_db()
-            db.execute("INSERT INTO users (username, password_hash) VALUES(?, ?)", (username, hash))
+            db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", (username, hash))
             db.commit()
             return redirect("/")
         except Exception as e:
@@ -102,7 +97,7 @@ def register():
 
     else:
         return render_template("register.html", visibility="invisible")
-
+    
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -122,7 +117,6 @@ def login():
         elif not password:
             message = "Password required"
             return render_template("login.html", message=message, visibility="visible")
-
 
         # Query database for username
         db = get_db()
