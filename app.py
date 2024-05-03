@@ -140,3 +140,10 @@ def logout():
     session.clear()
     session["username"] = None
     return redirect("/")
+
+@app.route("/generator", methods=["GET", "POST"])
+def generator():
+    return render_template("generator.html")
+
+if __name__ == '__main__': 
+    app.run(debug=True)

@@ -1,4 +1,13 @@
 Flask
 Flask-Session
 requests
+blinker
+cachelib
+click
+importlib-metadata
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
+zipp
 gunicorn
