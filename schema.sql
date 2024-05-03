@@ -14,3 +14,4 @@ CREATE TABLE credentials (
 );
 
 CREATE UNIQUE INDEX username ON users(username);
+
