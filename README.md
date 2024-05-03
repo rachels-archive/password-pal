@@ -1,19 +1,25 @@
 # Password Pal
 
-#### Video Demo: https://youtu.be/eYUjr-SMG7Q
+#### Project Link: https://password-pal.onrender.com
 
 #### Description:
 
 Password Pal is a secure password manager. With Password Pal, users can effortlessly generate and manage strong, unique passwords for their various accounts. The web app provides a user-friendly interface for creating, viewing, updating, and deleting login details. The following list are the key functions:
 
+![Screenshot of Password Pal](https://github.com/rachels-archive/password-pal/assets/79963756/a4bf938e-eaf4-430c-b2a7-04d1659e0e87)
+
 1.  **User Registration and Login:**
 
     - Users can securely create an account to access the password manager's features.
     - Secure login functionality is implemented, likely using hashed passwords for enhanced security.
+    - 
+![Screenshot of Password Pal](https://github.com/rachels-archive/password-pal/assets/79963756/90776a79-d663-46f5-bf40-4008f6453de4)
 
 2.  **Password Generator:**
 
     - Utilizes the `window.crypto.getRandomValues` function, leveraging the cryptographic functionality provided by the browser's Web Crypto API. This ensures that the generated passwords are truly random and secure.
+      
+![Screenshot of Password Pal](https://github.com/rachels-archive/password-pal/assets/79963756/d1cb42b9-1ced-4775-a193-23e6695bba87)
 
 3.  **Password Vault:**
 
