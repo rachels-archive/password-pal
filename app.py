@@ -88,7 +88,7 @@ def register():
             # successful
             db = get_db()
             # now you can use get_db()
-            db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", (username, hash))
+            db.execute("INSERT INTO users (username, password_hash) VALUES(?, ?)", (username, hash))
             db.commit()
             return redirect("/")
         except Exception as e:
